@@ -1,0 +1,226 @@
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+    *, button:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    .logo {
+        background-color: red;
+    }
+    .nav-link img {
+        width: 30px;
+    }
+    .link-text {
+        color: black;
+        padding-bottom: 8px;
+        font-weight: 500;
+    }
+    nav.navbar.navbar-expand-lg {
+        height: 97px;
+    }
+    a.nav-link {
+        color: #1F1F1F;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    ul.nav, ul.top-menu.nav.justify-content-end, a.nav-link, .link-text, .dropdown-item, .top-menu a.nav-link, a.nav-link, .link-text, .dropdown-item {
+        font-family: 'DM Mono';
+    }
+    li.nav-item.dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropdown-toggle::after {
+        content: none;
+    }
+    .section1.about {
+        height: 100vh;
+        background-color: #F0F0EC;
+        margin: 0px 0 0 -30px;
+        padding: 52px;
+    }
+    ul.top-menu.nav.justify-content-end {
+        height: 97px;
+        padding-top: 25px;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("img/menu.png") !important;
+    }
+
+    /*29-09-2021*/
+    .link-text, .nav-link, #footer_nav li a {
+        transition: all .3s;
+    }
+    .p-sidebar {
+       max-width: 93px;
+   }
+   .p-right-ofsidebar {
+       max-width: calc(100% - 93px);
+   }
+   .logo {
+    position: fixed;
+    max-width: 100%;
+    z-index: 1;
+    max-width: 93px;
+    height: 97px;
+}
+#collapsibleNavbar {
+    z-index: 2;
+}
+.top-menu .dropdown-menu {
+    left: 50%;
+    width: 20rem;
+    margin: 0;
+    padding-top: 1rem;
+    text-align: left;
+    position: absolute;
+    z-index: 96;
+    background: transparent;
+    transform: translate(-50%, 0%);
+}
+.top-menu .dropdown-item {
+    font-weight: 500;
+    white-space: normal;
+    background: #fff;
+    margin-top: 1px;
+}
+
+ul.nav.nav-pills {
+    margin-top: 97px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.logo img {
+    max-width: 63px;
+}  
+
+.verticle-text {
+    writing-mode: vertical-rl;
+    background-color: #000;
+    height: 255px;
+    letter-spacing: 1px;
+    font-family: helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+}
+.top-menu .current-menu-item > a.nav-link {
+    color: #99dce2;
+}
+
+.link-text {
+    font-size: 12px;
+    text-shadow: 1px 1px white;
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    letter-spacing: .5px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    margin-bottom: 15px;
+    color: #282828;
+}
+.nav-link:hover .link-text, .nav-link:focus .link-text {
+    background-size: 100% 100%;
+}
+.nav-pills a.nav-link:hover {
+    background-color: transparent;
+}
+
+.top-menu a.nav-link {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    font-weight: 500;
+}
+
+/*footer*/
+footer {
+    padding: 0 70px;
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+}
+#footer_nav li a {
+    background: #000;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+}
+a.nav-link:hover, #footer_nav li a:hover, .top-menu .dropdown-item:focus, .top-menu .dropdown-item:hover {
+    background-color: #e10000;
+    color: #fff;
+}
+.p-finner {
+    border-bottom: 10px solid #000;
+}
+#footer_mark {
+    max-width: 63px;
+    padding: 0 15px;
+    background: #fff;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer_info .company_name {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+#footer_info p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    .container.header-container {
+        max-width: 1400px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .top-menu .dropdown-menu {
+       position: relative;
+   }
+}
+@media screen and (max-width: 768px) {
+    #footer_info .add {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+    footer {
+        padding: 0 15px;
+    }
+    .logo img {
+        max-width: 43px;
+    }
+    nav.navbar.navbar-expand-lg {
+        height: auto;
+    }
+    .logo, nav.navbar.navbar-expand-lg {
+        height: 70px;
+    }
+    ul.nav.nav-pills {
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 587px) {
+    #collapsibleNavbar {
+        min-width: 320px;
+        position: absolute;
+        top: 60px;
+        right: -15px;
+    }
+    .logo, .p-sidebar {
+        max-width: 60px;
+    }
+    .verticle-text {
+        height: 200px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .p-right-ofsidebar {
+        max-width: calc(100% - 60px);
+    }
+}
