@@ -9,18 +9,14 @@ body {
     outline: none;
     text-decoration: none;
 }
+
 .oveflow-hidden, .oveflow-hidden img, .g-image, .g-image img, .gd-wrap, .hover-desc {
     transition: all .7s;
 }
-
-
-/*.section1.about {
-height: 100vh;
-background-color: #F0F0EC;
-margin: 0px 0 0 -30px;
-padding: 52px;
+.resume-section {
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
 }
-*/
+
 .section1 {
     font-size: 60px;
     font-weight: 100;
@@ -493,7 +489,7 @@ li.dark-purple {
 :root {
     --button-size: 22px;
     --button-offset: 22px;
-    --border-color: #99dce2;
+    --border-color: #e44b4c;
 
     --button-size-md: 30px;
     --button-offset-md: 30px;
@@ -780,10 +776,28 @@ section#photos .container.bg-img {
     letter-spacing: 0.5px;
 }
 /* portfolio*/
-section#portfolio {
-    padding-top: 145px;
-    padding-bottom: 100px;
+#portfolio .tab-button sup {
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: super;
 }
+section#portfolio button.tab-button:before, section#portfolio button.tab-button.active:before {
+    color: rgba(0, 0, 0, 0);
+    content: ".";
+    font-size: 30px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    text-shadow: rgb(0 0 0 / 0%) 0px 0px;
+    top: -42px;
+    transition: text-shadow 0.1s ease 0s, color 0.3s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+}
+section#portfolio button.tab-button:hover::before, section#portfolio button.tab-button.active:before {
+    color: #222222;
+    text-shadow: 7px 0 #222222, 14px 0 #222222, 21px 0 #222222;
+}
+
 section#portfolio h3 {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -798,7 +812,7 @@ section#portfolio .section-title{
 section#portfolio button.tab-button.active {
     color: #090909;
 }
- section#portfolio button.tab-button {
+section#portfolio button.tab-button {
     background: transparent;
     color: #959595;
     border: none;
@@ -816,9 +830,18 @@ section#portfolio h2 {
     font-size: 36px;
     font-family: 'DM Mono';
 }
+div#posts {
+    column-count: 3;
+    column-gap: 10px;
+}
 div#posts .item-grid {
-    width: 33.33%;
-    float: left;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    margin: 0;
+}
+div#filters {
+    padding-bottom: 30px;
 }
 div#posts .item-wrap {
     margin: 15px;
@@ -881,18 +904,16 @@ div#posts ul li a, div#posts h3 a {
     outline: none;
     -webkit-transition: all 0.3s ease;
 }
-    .item-grid {
-      float: left;
-      display: none;
-  }
+.item-grid {
+  float: left;
+  display: none;
+}
 
-  div#posts .show {
-      display: block;
-  }
-  .portfolio-content {
-      margin-top: 20px;
-      overflow: hidden;
-  }
+div#posts .show {
+  display: block;
+}
+
+
 /* Crasol*/
 .carasol {
     align-items: center;
@@ -938,11 +959,11 @@ div#posts ul li a, div#posts h3 a {
   .Nav-button {
     height: var(--button-size-md);
     width: var(--button-size-md);
-  }
+}
 
-  .Nav-button:not(:first-child) {
+.Nav-button:not(:first-child) {
     margin-left: var(--button-offset-md);
-  }
+}
 }
 
 .Nav-button:focus {
@@ -968,7 +989,8 @@ div#posts ul li a, div#posts h3 a {
   left: 10px;
   width: 100%;
   height: 100%;
-  background-color: #99dce2;
+  /*background-color: #99dce2;*/
+  background-color: #e44b4c;
 }
 
 .Gallery-container {
@@ -988,28 +1010,292 @@ div#posts ul li a, div#posts h3 a {
   height: calc(var(--gallery-item-size) * .56);
   background-color: #FFF;
   border: 2px solid #99dce2;
+  border: 2px solid #e44b4c;
   color: #00e;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 68px;
   position: relative;
 }
 .Gallery-item img {
+    max-width: 100%;
+    max-height: 150px;
+}
+/*#posts > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#posts > .item > .item-wrap {
     width: 100%;
-    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#posts {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+#posts .wide {
+    grid-column: span 2;
+}
+#posts .tall {
+    grid-row: span 2;
+}
+#posts .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+*/
+div#\31 1 {
+    clear: both;
 }
 
 
+/* Additive page */
+section.additive_section {
+    background: url('../image/New/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 400px;
+    z-index: -1;
+}
+section.footware_contet img.shooe_img {
+ width: 100%;
+ position: static;
+ float: right;
+ width: 100%;
+ max-height: 130%;
+ z-index: 9999;
+ background: none;
+ opacity: 1;
+ width: 25%;
+ margin-top: -170px;
+}
+
+section.footware_contet .lower_content {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+section.footware_contet p3 {
+    position: absolute;
+    top: -60px;
+    right: 220px;
+    padding-left: 46%;
+    position: absolute;
+    font-family: 'Barlow';
+    z-index: 21;
+    line-height: 1.4em;
+    font-size: 2.36vw;
+    text-align: right;
+    text-shadow: 1px 1px white;
+}
+section.footware_contet ins {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    font-family: 'Barlow';
+    z-index: 21;
+    line-height: 1.4em;
+    font-size: 2.36vw;
+    text-align: right;
+    text-shadow: 1px 1px white;
+}
+.row_padding .text-muted {
+    color: #000 !important;
+    
+}
+.row_padding p.lead {
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+.row_padding p.youtube {
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+    line-height: 24px;
+    font-weight: bold;
+
+}
+.row_padding h2.featurette-heading {
+    color: #000 !important;
+    font-size: 14px;
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-style: italic;
+}
+.row_padding .col-md-7.order-md-2 {
+    max-width: 60%;
+    padding: 0px 112px;
+}
+.our_goal table {
+    margin-top: 100px;
+}
+.our_goal table tr, .our_goal table td {
+    color: #000;
+    font-size: 13px;
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    padding: .4rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.row_padding a.custom-link {
+    color: inherit;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#cbf1f7), to(#cbf1f7));
+    background-image: -webkit-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
+    background-image: -o-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+.video_gallary{
+    padding: 40px 0px;
+}
+section.gallary_footware {
+    padding: 60px 0px;
+}
+mark, .custom-link:active {
+    background-image: -webkit-gradient(linear, left top, right top, from(#e5e5e5), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
+    background-image: -o-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
+    background-image: linear-gradient(to right, #e5e5e5 0%, #e5e5e5 100%);
+}
+
+.row_padding img {
+    height: auto;
+    max-width: 100%;
+}
+.project-gallery-wrapper .project-gallery-image {
+    float: left;
+    width: 28.33%;
+    margin: 1.2%;
+    margin-bottom: 3%;
+}
+.video {
+    padding-bottom: 50px;
+}
+
+.large_img img.myImg {
+    max-width: 600px;
+}
+div#myrol {
+    padding-top: 150px;
+}
+
+button.close {
+    right: 0;
+}
+.modal-backdrop {
+    background-color: #fff;
+}
+div.show {
+    padding-right: 0px !important;
+}
+/*lightbox
+button.close {
+    right: 24px;
+}
+.carousel-control-next {
+    right: 100px;
+}
+.carousel-control-prev {
+    left: 80px;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+    width: 100px;
+}
+.modal-backdrop {
+    background: #F5F0FF;
+    }*/
+
+    /*resume.html*/
+    .custom-link {
+        font-size: inherit;
+        text-shadow: 1px 1px white;
+        background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+        letter-spacing: .5px;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 100% .55em;
+        color: #000;
+        text-decoration: none ! important;
+        outline: none;
+    }
+    .custom-link:hover, .custom-link:focus {
+        background-size: 100% 100%;
+    }
+    .resume-section {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .resume-container h2 {
+        font-size: 31px;
+    }
+    .resume-h4 {
+      font-size: 18px;
+  }
+  .resume-image:before {
+    position: absolute;
+    content: '';
+    background: url(../image/img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 228px;
+    height: 228px;
+    right: -100px;
+    top: -144px;
+    z-index: -1;
+    opacity: 0.5;
+} 
 @media (min-width: 600px) {
-  .Gallery-wrapper {
-    width: var(--gallery-item-size-md);
-  }
-  .Gallery-itemContent {
-    width: var(--gallery-item-size-md);
-    height: calc(var(--gallery-item-size-md) * .56);
-    font-size: 96px;
-  }
+    .Gallery-item img {
+        max-height: 300px;
+    }
+    .Gallery-wrapper {
+        width: var(--gallery-item-size-md);
+    }
+    .Gallery-itemContent {
+        width: var(--gallery-item-size-md);
+        height: calc(var(--gallery-item-size-md) * .56);
+    }
 }
 @media (min-width: 1199px) {
     .product-gallery .container {
@@ -1029,25 +1315,28 @@ div#posts ul li a, div#posts h3 a {
     }
 }
 @media (max-width: 767px) {
-    .circle-shape-title:before {
-        transform: scale(0.5);
-    }
+   .resume-image:before {
+    transform: scale(0.7);
+}
+.circle-shape-title:before {
+    transform: scale(0.5);
+}
 
-    .hover-desc {
-        opacity: 1;
-    }
-    .grid .item-wrap img, .full-width-row img, .grid .grid-item {
-        max-height: 100%;
-        min-height: 100%;
-        height: 100%;
-    }
-    .g-desc h3 {
-        font-size: 18px;
-    }
-    .overlap-image .work-pic img {
-        width: 100%;
-        max-width: 50%;
-    }
+.hover-desc {
+    opacity: 1;
+}
+.grid .item-wrap img, .full-width-row img, .grid .grid-item {
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+.g-desc h3 {
+    font-size: 18px;
+}
+.overlap-image .work-pic img {
+    width: 100%;
+    max-width: 50%;
+}
 
 }
 @media (max-width: 992px) and (min-width: 767px){
@@ -1185,11 +1474,31 @@ div#posts ul li a, div#posts h3 a {
         min-height: unset;
     }
     div#posts .item-grid {
-    width: 100%;
-    float: left;
+        width: 100%;
+        float: left;
+    }
+    div#posts {
+        column-count: unset;
+        column-gap: unset;
+    }
+    div#posts .item-grid {
+        padding: 0px 20px;
+    }
+    .product-gallery .grid img {
+        max-height: 260px;
+        width: 100%;
+    }
 }
-}
+
 @media screen and (max-width: 587px) {
+    .resume-image:before {
+        transform: scale(0.5);
+        right: -50px;
+        top: -130px;
+    }
+    .resume-container h2 {
+        font-size: 24px;
+    }
     h1, h1.display-1 {
         font-size: 36px;
     } 
@@ -1310,4 +1619,10 @@ div#posts ul li a, div#posts h3 a {
     main.custom_main{
         overflow-x:scroll;
     }
+}
+@media (min-width: 1200px){
+.modal-xl {
+    width: 100%;
+    max-width: 80%;
+}
 }
