@@ -1069,16 +1069,16 @@ section.additive_section {
     z-index: -1;
 }
 section.footware_contet img.shooe_img {
- width: 100%;
- position: static;
- float: right;
- width: 100%;
- max-height: 130%;
- z-index: 9999;
- background: none;
- opacity: 1;
- width: 25%;
- margin-top: -170px;
+   width: 100%;
+   position: static;
+   float: right;
+   width: 100%;
+   max-height: 130%;
+   z-index: 9999;
+   background: none;
+   opacity: 1;
+   width: 25%;
+   margin-top: -170px;
 }
 
 section.footware_contet .lower_content {
@@ -1153,10 +1153,10 @@ section.footware_contet ins {
     max-width: 60%;
     padding: 0px 112px;
 }
-.our_goal table {
+.row_padding table {
     margin-top: 100px;
 }
-.our_goal table tr, .our_goal table td {
+.row_padding table tr, .row_padding table td {
     color: #000;
     font-size: 13px;
     font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
@@ -1285,6 +1285,99 @@ button.close {
     z-index: -1;
     opacity: 0.5;
 } 
+/* Provo Page*/
+.provo{
+    overflow-x: hidden;
+}
+section.provo_section {
+    background: url(../image/banners-provo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 370px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+h1.site_title {
+    padding: 0% 0 6% 11.6%;
+    max-width: 100%;
+    font-family: 'Barlow';
+    font-size: 3vw;
+    text-align: left;
+    z-index: 8;
+    text-shadow: 2px 2px white;
+    font-weight: 400;
+}
+.provo_section .saho_text{
+    text-decoration: underline;
+    color: #989898;
+}
+/*img.provo_right_img {
+ width: 100%;
+ max-width: 200px;
+ float: right;
+ z-index: 1;
+ bottom: 0px;
+ position: absolute;
+ right: -20px;
+ top: -15px;
+ opacity: 0.6;
+ }*/
+ img.provo_right_img.w-100 {
+    position: relative;
+    bottom: -130px;
+}
+img.backpack_img {
+    max-width: 150px;
+    position: relative;
+    z-index: 0;
+    bottom: -80px;
+    right: 26px;
+}
+.cu_div {
+    max-width: 260px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+section#provo_goal.row_padding {
+    padding: 120px 0px;
+}
+#provo_goal p.lead {
+    width: 100%;
+    max-width: 330px;
+}
+#provo_goal span.custom-link {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+.gap_col{
+  padding-top: 120px;
+}
+div#provo_second_row {
+    padding: 60px 0px;
+}
+#provo_second_row .project-gallery-image {
+    float: left;
+    width: 30.33%;
+    margin: 1.2%;
+    margin-bottom: 3%;
+}
+#provo_second_row mark {
+    padding: .2em;
+    background-color: #fcf8e3;
+    background-image: unset;
+    font-weight: 600;
+}
+div#provo_second_row p.lead {
+    max-width: 75%;
+}
+.provo_section .right_col {
+    padding: 160px 0px 0px 0px;
+}
 @media (min-width: 600px) {
     .Gallery-item img {
         max-height: 300px;
@@ -1315,7 +1408,7 @@ button.close {
     }
 }
 @media (max-width: 767px) {
-   .resume-image:before {
+ .resume-image:before {
     transform: scale(0.7);
 }
 .circle-shape-title:before {
@@ -1369,6 +1462,9 @@ button.close {
 @media (max-width: 1024px) and (min-width: 992px){
     .left-triangle-shape:after {
         border-right: 320px solid transparent;
+    }
+    h1.site_title {
+        font-size: 10vw;
     }
 }
 
@@ -1488,6 +1584,14 @@ button.close {
         max-height: 260px;
         width: 100%;
     }
+    div#provo_second_row p.lead {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    h1.site_title {
+        font-size: 11vw;
+    }
+
 }
 
 @media screen and (max-width: 587px) {
@@ -1574,6 +1678,9 @@ button.close {
     .flowchart_img img {
         width: 300px;
     }
+    h1.site_title {
+        font-size: 12vw;
+    }
 }
 @media screen and (max-width: 375px) {
     .section1 {
@@ -1621,8 +1728,29 @@ button.close {
     }
 }
 @media (min-width: 1200px){
-.modal-xl {
-    width: 100%;
-    max-width: 80%;
+    .modal-xl {
+        width: 100%;
+        max-width: 80%;
+    }
+    .provo_section .container{
+        max-width: 1400px;
+    }
 }
+@media (max-width: 767px){
+  .cu_div {
+        max-width: 100%;
+        position: relative;
+
+    }
+    img.provo_right_img.w-100 {
+        position: relative;
+        bottom: 40px;
+        max-width: 145px;
+
+    }
+    img.backpack_img {
+     position: relative;
+     bottom: 70px;
+     max-width: 126px;
+ }
 }
