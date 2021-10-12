@@ -1,3 +1,10 @@
+$(document).ready(function(){
+                $('.tab-button').click(function(){
+                    $("div.work-item").fadeOut(200);
+          $("div.work-item").fadeIn('slow');
+                });
+                });
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -252,7 +259,7 @@ render () {
     const fancyNav = new FancyNav({
       btns: this.btns,
       nav: this.nav,
-      highlightColor: '#99DCE2',
+      highlightColor: '#e44b4c',
       backgroundColor: '#FFFFFF',
       strokeWidth: 10
   }).render()
@@ -269,3 +276,7 @@ const gallery = new Gallery({
   items: Array.from(document.querySelectorAll('.js-item')),
   btns: Array.from(document.querySelectorAll('.js-button'))
 }).render()
+
+
+
+
