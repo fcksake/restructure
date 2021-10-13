@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 body {
     overflow-x:hidden;
@@ -1069,16 +1070,16 @@ section.additive_section {
     z-index: -1;
 }
 section.footware_contet img.shooe_img {
-   width: 100%;
-   position: static;
-   float: right;
-   width: 100%;
-   max-height: 130%;
-   z-index: 9999;
-   background: none;
-   opacity: 1;
-   width: 25%;
-   margin-top: -170px;
+ width: 100%;
+ position: static;
+ float: right;
+ width: 100%;
+ max-height: 130%;
+ z-index: 9999;
+ background: none;
+ opacity: 1;
+ width: 25%;
+ margin-top: -170px;
 }
 
 section.footware_contet .lower_content {
@@ -1155,6 +1156,9 @@ section.footware_contet ins {
 }
 .row_padding table {
     margin-top: 100px;
+}
+.row_padding .table {
+    margin-top: 0px;
 }
 .row_padding table tr, .row_padding table td {
     color: #000;
@@ -1378,6 +1382,104 @@ div#provo_second_row p.lead {
 .provo_section .right_col {
     padding: 160px 0px 0px 0px;
 }
+
+/* XANAX Page*/
+section.XANAX_section {
+    background: url(../image/XANAX/banner-img-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 400px;
+    z-index: -1;
+}
+.title_xanax ins {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    font-size: 42px;
+}
+.image_col img{
+    width: 100%;
+    position: absolute;
+    top: -125px;
+    right: 10px;
+}
+.content_xanax p {
+    font-family: 'Barlow';
+    font-size: 42px;
+    text-align: right;
+    font-weight: 600;
+}
+section#XANAX_goal ins {
+    font-size: 13px;
+    line-height: 2px;
+    margin: 0px !important;
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+section#XANAX_goal .tech_text {
+    width: 80%;
+}
+.XANAX_gap_col{
+   padding-top: 100PX;
+}
+#XANAX_second_row p.lead {
+    width: 85%;
+}
+#XANAX_second_row mark {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #e5e5e5 0%, #e5e5e5 100%);
+    font-size: 15px;
+    font-weight: 400;
+}
+#XANAX_second_row blockquote {
+    font-size: 20px;
+    font-weight: 400 !important;
+    padding-left: 25px;
+    position: relative;
+}
+#XANAX_second_row blockquote:before {
+    content: '"';
+    position: absolute;
+    left: 3px;
+    font-family: sans-serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: #e5e5e5;
+}
+.last_para b {
+    font-size: 14px;
+    font-weight: 500;
+}
+section#XANAX_goal {
+    padding: 250px 0;
+}
 @media (min-width: 600px) {
     .Gallery-item img {
         max-height: 300px;
@@ -1408,7 +1510,7 @@ div#provo_second_row p.lead {
     }
 }
 @media (max-width: 767px) {
- .resume-image:before {
+   .resume-image:before {
     transform: scale(0.7);
 }
 .circle-shape-title:before {
@@ -1429,6 +1531,21 @@ div#provo_second_row p.lead {
 .overlap-image .work-pic img {
     width: 100%;
     max-width: 50%;
+}
+.image_col img {
+    width: 20%;
+    position: absolute;
+    top: -125px;
+    right: 10px;
+}
+.title_xanax ins {
+    font-size: 26px;
+}
+.content_xanax p {
+    font-family: 'Barlow';
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
 }
 
 }
@@ -1457,6 +1574,12 @@ div#provo_second_row p.lead {
         border-right: 240px solid transparent;
 
     }
+    .title_xanax ins {
+        font-size: 22px;
+    }
+    .content_xanax p {
+        font-size: 22px;
+    }
 
 }
 @media (max-width: 1024px) and (min-width: 992px){
@@ -1466,6 +1589,13 @@ div#provo_second_row p.lead {
     h1.site_title {
         font-size: 10vw;
     }
+    .content_xanax p {
+        font-size: 30px;
+    }
+    .title_xanax ins {
+        font-size: 34px;
+    }
+
 }
 
 @media (max-width: 587px) {
@@ -1591,7 +1721,7 @@ div#provo_second_row p.lead {
     h1.site_title {
         font-size: 11vw;
     }
-
+    
 }
 
 @media screen and (max-width: 587px) {
@@ -1718,6 +1848,9 @@ div#provo_second_row p.lead {
     .custom_section img {
         width: 100vw;
     }
+    section#XANAX_goal iframe {
+        width: 100%;
+    }
 }
 @media(max-width:576px){
     .sticky-container{
@@ -1735,22 +1868,29 @@ div#provo_second_row p.lead {
     .provo_section .container{
         max-width: 1400px;
     }
+
 }
 @media (max-width: 767px){
   .cu_div {
-        max-width: 100%;
-        position: relative;
+    max-width: 100%;
+    position: relative;
 
-    }
-    img.provo_right_img.w-100 {
-        position: relative;
-        bottom: 40px;
-        max-width: 145px;
+}
+img.provo_right_img.w-100 {
+    position: relative;
+    bottom: 40px;
+    max-width: 145px;
 
-    }
-    img.backpack_img {
-     position: relative;
-     bottom: 70px;
-     max-width: 126px;
- }
+}
+img.backpack_img {
+   position: relative;
+   bottom: 70px;
+   max-width: 126px;
+}
+section#XANAX_goal .row.featurette {
+    width: 100%;
+}
+section#XANAX_goal .tech_text, #XANAX_second_row p.lead, section#XANAX_goal iframe {
+    width: 100%;
+}
 }
