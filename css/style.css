@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 body {
     overflow-x:hidden;
@@ -1069,16 +1070,16 @@ section.additive_section {
     z-index: -1;
 }
 section.footware_contet img.shooe_img {
-   width: 100%;
-   position: static;
-   float: right;
-   width: 100%;
-   max-height: 130%;
-   z-index: 9999;
-   background: none;
-   opacity: 1;
-   width: 25%;
-   margin-top: -170px;
+ width: 100%;
+ position: static;
+ float: right;
+ width: 100%;
+ max-height: 130%;
+ z-index: 9999;
+ background: none;
+ opacity: 1;
+ width: 25%;
+ margin-top: -170px;
 }
 
 section.footware_contet .lower_content {
@@ -1121,10 +1122,13 @@ section.footware_contet ins {
     color: #000 !important;
     
 }
+.text-dark {
+    color: #faf9f8!important;
+}
 .row_padding p.lead {
     font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     color: #000;
     line-height: 24px;
     font-weight: 500;
@@ -1156,6 +1160,9 @@ section.footware_contet ins {
 .row_padding table {
     margin-top: 100px;
 }
+.row_padding .table {
+    margin-top: 0px;
+}
 .row_padding table tr, .row_padding table td {
     color: #000;
     font-size: 13px;
@@ -1172,8 +1179,8 @@ section.footware_contet ins {
     text-decoration: none;
     background-image: -webkit-gradient(linear, left top, right top, from(#cbf1f7), to(#cbf1f7));
     background-image: -webkit-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
-    background-image: -o-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
-    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    background-image: -o-linear-gradient(left,  #d7d3ce 0%, #d7d3ce 100%);
+    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
     background-color: transparent;
     background-position: 0 100%;
     background-repeat: repeat-x;
@@ -1249,7 +1256,7 @@ button.close {
     .custom-link {
         font-size: inherit;
         text-shadow: 1px 1px white;
-        background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+        background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
         letter-spacing: .5px;
         background-position: 0 100%;
         background-repeat: repeat-x;
@@ -1288,6 +1295,9 @@ button.close {
 /* Provo Page*/
 .provo{
     overflow-x: hidden;
+}
+img.img-bg {
+    background-color: #d7d3ce;
 }
 section.provo_section {
     background: url(../image/banners-provo.png);
@@ -1378,6 +1388,226 @@ div#provo_second_row p.lead {
 .provo_section .right_col {
     padding: 160px 0px 0px 0px;
 }
+
+/* XANAX Page*/
+section.XANAX_section {
+    background: url(../image/XANAX/banner-img-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 400px;
+}
+/*h1.title_xanax ins {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+    font-size: 42px ;
+}*/
+ins {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+}
+.unity{
+    font-size: 14px; 
+}
+
+
+.image_col img{
+    width: 100%;
+    position: absolute;
+    top: -125px;
+    right: 10px;
+}
+.content_xanax p {
+    font-family: 'Barlow';
+    font-size: 42px;
+    text-align: right;
+    font-weight: 600;
+}
+section#XANAX_goal ins {
+    font-size: 13px;
+    line-height: 2px;
+    margin: 0px !important;
+    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+section#XANAX_goal .tech_text {
+    width: 80%;
+}
+.XANAX_gap_col{
+   padding-top: 100PX;
+}
+#XANAX_second_row p.lead {
+    width: 85%;
+}
+#XANAX_second_row mark {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #e5e5e5 0%, #e5e5e5 100%);
+    font-size: 15px;
+    font-weight: 400;
+}
+ .row_padding blockquote {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+}
+.row_padding blockquote:before {
+    content: '"';
+    position: absolute;
+    left: 0px;
+    font-family: sans-serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: #e5e5e5;
+}
+.last_para b {
+    font-size: 14px;
+    font-weight: 500;
+}
+section#XANAX_goal {
+    padding: 250px 0;
+}
+
+/* Wbx */
+section.wbx_banner {
+    background: url(../image/wbx/banner-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  /*  opacity: 0.7;*/
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 300px;
+    
+}
+.wbx_banner a.saho_text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 250px;
+    text-decoration: underline;
+    color: #989898;
+}
+h1.title_row.lh-1 {
+    line-height: 65px;
+}
+.wbx_banner img#right_img{
+    position: relative;
+    bottom: -150px;
+    width: 100%;
+    max-width: 250px;
+    float: right;
+    opacity: 0.6;
+
+}
+.contetnt_section .firstsec_content p {
+    font-family: 'Barlow';
+    font-size: 38px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.contetnt_section img {
+    width: 100%;
+    max-width: 170px;
+}
+.wbx_table{
+    margin-top: 170px;
+}
+section#wbx_goal {
+    padding: 150px 0px;
+}
+table.wbx_table {
+    margin-top: 180px;
+}
+/*RCB.html*/
+.bg-purple {
+    background-color: #c5b3ff;
+}
+section.rcb_section {
+    background: url('../image/RCB/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 460px;
+    z-index: 1;
+}
+.p-right-img {
+   opacity: 0.6;
+ }
+.lower_content p3 {
+    font-family: 'Barlow';
+    z-index: 21;
+    line-height: 1.4;
+    font-size: 2.36vw;
+    text-shadow: 1px 1px white;
+}
+.lower_content ins {
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% .55em;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
+    text-shadow: 1px 1px white;
+}
+.below-banner {
+    padding-top: 250px;
+}
+.p-right-img {
+    right: 0px;
+    top: -60px;
+}
+.p-below-img {
+    top: -125px;
+}
+.pt-custom {
+      padding-top: 185px;
+}
+section#rcb_goal {
+    padding: 250px 0px;
+}
 @media (min-width: 600px) {
     .Gallery-item img {
         max-height: 300px;
@@ -1398,6 +1628,11 @@ div#provo_second_row p.lead {
         font-size: 80px;
     }
 }
+@media (max-width: 1140px) {
+.pt-custom.mob-padding {
+      padding-top: 210px;
+}
+}
 
 @media (max-width: 1200px) {
     .p-title h2 {
@@ -1408,7 +1643,7 @@ div#provo_second_row p.lead {
     }
 }
 @media (max-width: 767px) {
- .resume-image:before {
+   .resume-image:before {
     transform: scale(0.7);
 }
 .circle-shape-title:before {
@@ -1429,6 +1664,21 @@ div#provo_second_row p.lead {
 .overlap-image .work-pic img {
     width: 100%;
     max-width: 50%;
+}
+.image_col img {
+    width: 20%;
+    position: absolute;
+    top: -125px;
+    right: 10px;
+}
+.title_row ins {
+    font-size: 26px;
+}
+.content_xanax p {
+    font-family: 'Barlow';
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
 }
 
 }
@@ -1457,7 +1707,33 @@ div#provo_second_row p.lead {
         border-right: 240px solid transparent;
 
     }
+    .title_row ins {
+        font-size: 22px;
+    }
+    .content_xanax p {
+        font-size: 22px;
 
+    }
+    .contetnt_section .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 50.333333%;
+    max-width: 49.333333%;
+}
+.empty_div {
+    display: none;
+}
+.contetnt_section .firstsec_content p {
+    font-size: 32px;
+}
+section#wbx_goal {
+    padding: 60px 0px;
+}
+table.wbx_table {
+    margin-top: 0px;
+}
+h1.title_row.lh-1 {
+    line-height: 26px;
+}
 }
 @media (max-width: 1024px) and (min-width: 992px){
     .left-triangle-shape:after {
@@ -1466,6 +1742,14 @@ div#provo_second_row p.lead {
     h1.site_title {
         font-size: 10vw;
     }
+    .content_xanax p {
+        font-size: 30px;
+        text-align: left;
+    }
+    .title_row ins {
+        font-size: 34px;
+    }
+
 }
 
 @media (max-width: 587px) {
@@ -1591,7 +1875,7 @@ div#provo_second_row p.lead {
     h1.site_title {
         font-size: 11vw;
     }
-
+    
 }
 
 @media screen and (max-width: 587px) {
@@ -1711,12 +1995,18 @@ div#provo_second_row p.lead {
 .sticky-container {
     background-color: #c5b3ff;
 }
+section{
+    background-color: #c5b3ff;
+}
 @media(max-width:1200px){
     section.custom_section{
         min-width:auto;
     }
     .custom_section img {
         width: 100vw;
+    }
+    section#XANAX_goal iframe {
+        width: 100%;
     }
 }
 @media(max-width:576px){
@@ -1735,22 +2025,68 @@ div#provo_second_row p.lead {
     .provo_section .container{
         max-width: 1400px;
     }
+
 }
 @media (max-width: 767px){
   .cu_div {
-        max-width: 100%;
-        position: relative;
+    max-width: 100%;
+    position: relative;
 
-    }
-    img.provo_right_img.w-100 {
-        position: relative;
-        bottom: 40px;
-        max-width: 145px;
+}
+img.provo_right_img.w-100 {
+    position: relative;
+    bottom: 40px;
+    max-width: 145px;
 
-    }
-    img.backpack_img {
-     position: relative;
-     bottom: 70px;
-     max-width: 126px;
- }
+}
+img.backpack_img {
+   position: relative;
+   bottom: 70px;
+   max-width: 126px;
+}
+section#XANAX_goal .row.featurette {
+    width: 100%;
+}
+section#XANAX_goal .tech_text, #XANAX_second_row p.lead, section#XANAX_goal iframe {
+    width: 100%;
+}
+.row.featurette {
+    padding: 0px 12px;
+}
+section.contetnt_section {
+    padding: 60px 0px;
+}
+.firstsec_content h1.title_row.text-right.lh-1 {
+    text-align: left !important;
+}
+.contetnt_section .firstsec_content p {
+    font-size: 30px;
+    text-align: left;
+}
+.contetnt_section img {
+    width: 100%;
+    max-width: 100%;
+}
+section#wbx_goal {
+    padding: 0px 0px;
+}
+table.wbx_table {
+    margin-top: 0px;
+}
+h1.title_row.lh-1 {
+    line-height: 34px;
+}
+ .p-right-img {
+    right: -45px;
+    top: -60px;
+}
+.p-below-img {
+    top: 39px;
+}
+.pt-custom {
+      padding-top: 50px;
+}
+.pt-custom.mob-padding {
+      padding-top: 100px;
+}
 }
