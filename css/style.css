@@ -33,20 +33,42 @@ a.maglink {
 }
 
 /*slider*/
+.sticky-container {
+    background: #c5b3ff;
+}
+.sticky-container{
+  padding-top: 40px;
+}
 .sticky-container.slider_1 {
     background-color: #ff5900;
 }
-
+.new-sticky-container{
+    height:4500px !important;
+}
+.sticky-container{
+    height:3200px !important;
+}
+.rcb-sticky-container section.custom_section {
+    max-width: 400px;
+    display: flex;
+    margin: 10% 40px 10% 40px;
+}
 main.custom_main {
     overflow-x: hidden;
     display: flex;
     position: sticky;
     top:0;
 }
-section.custom_section {
-    min-width: 50vw;
+section.custom_section{
+      margin: 10% 0px 10% 20px;
+}
+.new-sticky-container section.custom_section {
+    max-width: 350px;
     display: flex;
-    margin: 10% 20px 10% 20px;
+    margin: 10% 0px 10% 20px;
+}
+.wbx-sticky-container section.custom_section {
+    margin: 10% 80px 10% 80px;
 }
 section.small_section {
     min-width: 20vw;
@@ -1125,13 +1147,19 @@ section.footware_contet ins {
 .text-dark {
     color: #faf9f8!important;
 }
-.row_padding p.lead {
-    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+.row_padding p.lead{
+   /* font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
     font-weight: normal;
     font-size: 14px;
     color: #000;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 500;*/
+    font-family: Proto Grotesk;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    text-align: left;
 
 }
 .row_padding p.youtube {
@@ -1157,20 +1185,19 @@ section.footware_contet ins {
     max-width: 60%;
     padding: 0px 112px;
 }
-.row_padding table {
+/*.row_padding table {
     margin-top: 100px;
-}
+}*/
 .row_padding .table {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .row_padding table tr, .row_padding table td {
-    color: #000;
-    font-size: 13px;
-    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
-    font-weight: 500;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
+    font-family: Proto Grotesk;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    text-align: left;
     padding: .4rem;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -1400,6 +1427,10 @@ section.XANAX_section {
     height: 100%;
     max-height: 400px;
 }
+p.para {
+    font-size: 18px;
+}
+
 /*h1.title_xanax ins {
     background-color: transparent;
     background-position: 0 100%;
@@ -1412,58 +1443,59 @@ section.XANAX_section {
     transition: background .3s;
     background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
     font-size: 42px ;
-}*/
-ins {
-    background-color: transparent;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% .55em;
-    font-weight: bolder;
-    text-decoration: none;
-    -webkit-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s;
-    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
-}
-.unity{
-    font-size: 14px; 
-}
+    }*/
+    ins {
+        background-color: transparent;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 100% .55em;
+        font-weight: bolder;
+        text-decoration: none;
+        -webkit-transition: background .3s;
+        -o-transition: background .3s;
+        transition: background .3s;
+        background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+        font-size: 20px;
+    }
+    .unity{
+        font-size: 14px; 
+    }
 
 
-.image_col img{
-    width: 100%;
-    position: absolute;
-    top: -125px;
-    right: 10px;
-}
-.content_xanax p {
-    font-family: 'Barlow';
-    font-size: 42px;
-    text-align: right;
-    font-weight: 600;
-}
-section#XANAX_goal ins {
-    font-size: 13px;
-    line-height: 2px;
-    margin: 0px !important;
-    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
-    background-color: transparent;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% .55em;
-    font-weight: bolder;
-    text-decoration: none;
-    -webkit-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s;
-}
-section#XANAX_goal .tech_text {
-    width: 80%;
-}
-.XANAX_gap_col{
-   padding-top: 100PX;
-}
-#XANAX_second_row p.lead {
+    .image_col img{
+        width: 100%;
+        position: absolute;
+        top: -125px;
+        right: 10px;
+    }
+    .content_xanax p {
+        font-family: 'Barlow';
+        font-size: 42px;
+        text-align: right;
+        font-weight: 600;
+    }
+    section#XANAX_goal ins {
+        font-size: 13px;
+        line-height: 2px;
+        margin: 0px !important;
+        background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+        background-color: transparent;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 100% .55em;
+        font-weight: bolder;
+        text-decoration: none;
+        -webkit-transition: background .3s;
+        -o-transition: background .3s;
+        transition: background .3s;
+    }
+    section#XANAX_goal .tech_text {
+        width: 80%;
+    }
+    .XANAX_gap_col{
+       padding-top: 100PX;
+   }
+   #XANAX_second_row p.lead {
     width: 85%;
 }
 #XANAX_second_row mark {
@@ -1480,7 +1512,7 @@ section#XANAX_goal .tech_text {
     font-size: 15px;
     font-weight: 400;
 }
- .row_padding blockquote {
+.row_padding blockquote {
     font-size: 20px;
     font-weight: 500;
     position: relative;
@@ -1494,6 +1526,7 @@ section#XANAX_goal .tech_text {
     font-size: 6rem;
     line-height: 1;
     color: #e5e5e5;
+    top: -40px;
 }
 .last_para b {
     font-size: 14px;
@@ -1508,7 +1541,7 @@ section.wbx_banner {
     background: url(../image/wbx/banner-1.png);
     background-repeat: no-repeat;
     background-position: center;
-  /*  opacity: 0.7;*/
+    /*  opacity: 0.7;*/
     position: relative;
     background-size: cover;
     height: 100%;
@@ -1552,14 +1585,17 @@ h1.title_row.lh-1 {
     margin-top: 170px;
 }
 section#wbx_goal {
-    padding: 150px 0px;
+    padding: 50px 0px;
 }
 table.wbx_table {
     margin-top: 180px;
 }
 /*RCB.html*/
-.bg-purple {
+/*.bg-purple {
     background-color: #c5b3ff;
+}*/
+blockquote.lead.mt-5.w-75 {
+    font-size: 18px;
 }
 section.rcb_section {
     background: url('../image/RCB/banner.png');
@@ -1574,7 +1610,7 @@ section.rcb_section {
 }
 .p-right-img {
    opacity: 0.6;
- }
+}
 .lower_content p3 {
     font-family: 'Barlow';
     z-index: 21;
@@ -1591,6 +1627,7 @@ section.rcb_section {
     transition: background .3s;
     background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
     text-shadow: 1px 1px white;
+    font-size: 2.36vw;
 }
 .below-banner {
     padding-top: 250px;
@@ -1603,10 +1640,75 @@ section.rcb_section {
     top: -125px;
 }
 .pt-custom {
-      padding-top: 185px;
+  padding-top: 185px;
 }
 section#rcb_goal {
-    padding: 250px 0px;
+    padding: 50px 0px;
+}
+ section#levi_goal {
+    padding: 50px 0px;
+}
+/* Levi Page*/
+section.levi_section {
+    background: url('../image/LEVI/bannersaveas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 460px;
+    z-index: 1;
+}
+section.levi_section .p-below-img {
+    left: 40px;
+    max-width: 150px;
+    top: 0px;
+}
+h2.para.mb-5.pb-5 {
+    font-size: 20px;
+}
+.row_padding  .levi_table{
+    margin-top: 0px;
+}
+div#levi_content p {
+    width: 90%;
+}
+#levi_content mark {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 103% 0.65em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+.r-img img.featurette-image {
+    width: 100%;
+    max-width: 85%;
+    padding-top: 34px;
+}
+/* XYZAR page*/
+.saho_text p {
+    text-decoration: underline;
+    color: #989898;
+    font-family: 'Barlow';
+    font-size: 3vw;
+    z-index: 8;
+    text-shadow: 2px 2px white;
+}
+.xyzar_section{
+    background: url('../image/XYZAR/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 460px;
+    z-index: 1;
 }
 @media (min-width: 600px) {
     .Gallery-item img {
@@ -1629,9 +1731,9 @@ section#rcb_goal {
     }
 }
 @media (max-width: 1140px) {
-.pt-custom.mob-padding {
+    .pt-custom.mob-padding {
       padding-top: 210px;
-}
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1715,24 +1817,33 @@ section#rcb_goal {
 
     }
     .contetnt_section .col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 50.333333%;
-    max-width: 49.333333%;
-}
-.empty_div {
-    display: none;
-}
-.contetnt_section .firstsec_content p {
-    font-size: 32px;
-}
-section#wbx_goal {
-    padding: 60px 0px;
-}
-table.wbx_table {
-    margin-top: 0px;
-}
-h1.title_row.lh-1 {
-    line-height: 26px;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 50.333333%;
+        max-width: 49.333333%;
+    }
+    .empty_div {
+        display: none;
+    }
+    .contetnt_section .firstsec_content p {
+        font-size: 32px;
+    }
+    section#wbx_goal {
+        padding: 60px 0px;
+    }
+    table.wbx_table {
+        margin-top: 0px;
+    }
+    h1.title_row.lh-1 {
+        line-height: 26px;
+    }
+    .p-below-img {
+        top: 0px;
+    }
+    section#rcb_goal, section#levi_goal{
+        padding: 100px 0px;
+    }
+        .saho_text p {
+    font-size: 10vw;
 }
 }
 @media (max-width: 1024px) and (min-width: 992px){
@@ -1749,7 +1860,12 @@ h1.title_row.lh-1 {
     .title_row ins {
         font-size: 34px;
     }
-
+    section#rcb_goal, section#levi_goal {
+        padding: 100px 0px;
+    }
+    .saho_text p {
+    font-size: 10vw;
+}
 }
 
 @media (max-width: 587px) {
@@ -1786,7 +1902,13 @@ h1.title_row.lh-1 {
     .section1 {
         font-size: 37px;
     }
-
+    .w-75 {
+        width: 100% !important;
+        padding: 0px 10px;
+    }
+    .row_padding blockquote {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1992,12 +2114,12 @@ h1.title_row.lh-1 {
 }
 
 
-.sticky-container {
+/*.sticky-container {
     background-color: #c5b3ff;
-}
-section{
+}*/
+/*section{
     background-color: #c5b3ff;
-}
+}*/
 @media(max-width:1200px){
     section.custom_section{
         min-width:auto;
@@ -2025,7 +2147,23 @@ section{
     .provo_section .container{
         max-width: 1400px;
     }
-
+   .saho_text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 200px;
+}
+}
+@media (max-width: 320px){
+    section.levi_section .p-below-img {
+        left: 10px !important;
+        max-width: 75px !important;
+        top: 50px !important;
+    }
 }
 @media (max-width: 767px){
   .cu_div {
@@ -2076,7 +2214,7 @@ table.wbx_table {
 h1.title_row.lh-1 {
     line-height: 34px;
 }
- .p-right-img {
+.p-right-img {
     right: -45px;
     top: -60px;
 }
@@ -2084,9 +2222,53 @@ h1.title_row.lh-1 {
     top: 39px;
 }
 .pt-custom {
-      padding-top: 50px;
+  padding-top: 50px;
 }
 .pt-custom.mob-padding {
-      padding-top: 100px;
+  padding-top: 100px;
+}
+.p-below-img {
+    top: -200px;
+    left: 0;
+    right: 0;
+    padding-top: -1px;
+    margin-left: 136px;
+    max-width: 115px;
+}
+.rcb_section .mob-img{
+    position: unset !important;
+}
+section#rcb_goal, section#levi_goal {
+    padding: 0px 0px;
+}
+section#rcb_goal p.mb-0.pt-5.mt-5 , section#levi_goal p.mb-0.pt-5.mt-5{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+section.levi_section .p-below-img {
+    left: 45px;
+    max-width: 106px;
+    top:50px;
+}
+section.levi_section  ins.font-weight-bold.bg-transparent {
+    font-size: 18px;
+}
+.r-img img.featurette-image {
+    width: 100%;
+    max-width: 100%;
+
+}
+.saho_text p {
+    font-size: 9vw;
+}
+ins, .row_padding p.lead, .row_padding table tr, .row_padding table td, p.para{
+     font-size: 16px;
+}
+.empty {
+    display: none;
 }
 }

@@ -28,7 +28,7 @@
             const rect = el.getBoundingClientRect();
             return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
         }
-    
+        // alert(document.documentElement.clientHeight);
         function wheelHandler(evt){
             
             const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
