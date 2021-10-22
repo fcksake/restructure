@@ -278,5 +278,27 @@ const gallery = new Gallery({
 }).render()
 
 
+   $( document ).ready(function(){
+    $('html').append('<div style="" id="loadingDiv"><h1 id="s100">SAMANTHa HO</h1><h1 id="s200">SAMANTHA HO</h1><h1 id="s300">SAMANTHA HO</h1><h1 id="s400">SAMANTHa HO</h1><h1 id="s500">SAMANTHa HO</h1><h1 id="s600">SAMANTHa HO</h1><h1 id="s700">SAMANTHa HO</h1><h1 id="s800">SAMANTHa HO</h1><h1 id="s900">SAMANTHa HO</h1></div>');
+    $(window).on('load', function(){
+       setTimeout(removeLoader); //wait for page load PLUS two seconds.
+   });
+    setTimeout(function(){ 
+        $("loadingDiv").show('slow'); 
+    },2000); 
+    $("html").css({"background": "#F5F0FF"});
+    $("body").hide();
+    $("#loadingDiv").css({"z-index": "99", "opacity": "1"});
+    function removeLoader(){
+    // $( "#loadingDiv" ).hide('slow', function() {
+      // fadeOut complete. Remove the loading div
+     // $("#loadingDiv h1").css({"display": "none"});
+     // $( "#loadingDiv" ).remove(); //makes page more lightweight 
+ //});  
+     $('body').delay(1000).show('slow');
+     $("html").css({"background": "#fff"});    
+ }
+});
+
 
 
