@@ -33,10 +33,35 @@ a.maglink {
 }
 
 /*slider*/
+.sticky-container {
+    background: #c5b3ff;
+}
+.sticky-container{
+  padding-top: 40px;
+}
 .sticky-container.slider_1 {
     background-color: #ff5900;
 }
-
+#new-sticky-container{
+    height:4500px !important;
+}
+#rcb-sticky-container{
+    height:6500px !important;
+    padding-top: 150px;
+}
+#prova-sticky-container{
+   height:8500px !important;
+}
+#wbx-sticky-container{
+   height:5000px !important;
+}
+.rcb-sticky-container section.custom_section, #rcb-sticky-container section.custom_section, #prova-sticky-container section.custom_section, #wbx-sticky-container section.custom_section  {
+    max-width: 800px;
+    display: flex;
+    margin: 4% 10px 4% 10px;
+    background: #d7d3ce;
+    padding: 40px;
+}
 main.custom_main {
     overflow-x: hidden;
     display: flex;
@@ -44,9 +69,15 @@ main.custom_main {
     top:0;
 }
 section.custom_section {
-    min-width: 50vw;
+    margin: 10% 0px 10% 20px;
+}
+#new-sticky-container section.custom_section {
+    max-width: 350px;
     display: flex;
-    margin: 10% 20px 10% 20px;
+    margin: 10% 0px 10% 20px;
+}
+.wbx-sticky-container section.custom_section {
+    margin: 10% 80px 10% 80px;
 }
 section.small_section {
     min-width: 20vw;
@@ -63,10 +94,7 @@ h1.custom_heading {
     font-family: 'DM Mono';
     text-transform: lowercase;
 }
-/* section:nth-child(even) {
-background-color: teal;
-color: white;
-} */
+
 
 .read-article{
     position: absolute;
@@ -1070,16 +1098,16 @@ section.additive_section {
     z-index: -1;
 }
 section.footware_contet img.shooe_img {
- width: 100%;
- position: static;
- float: right;
- width: 100%;
- max-height: 130%;
- z-index: 9999;
- background: none;
- opacity: 1;
- width: 25%;
- margin-top: -170px;
+   width: 100%;
+   position: static;
+   float: right;
+   width: 100%;
+   max-height: 130%;
+   z-index: 9999;
+   background: none;
+   opacity: 1;
+   width: 25%;
+   margin-top: -170px;
 }
 
 section.footware_contet .lower_content {
@@ -1125,13 +1153,13 @@ section.footware_contet ins {
 .text-dark {
     color: #faf9f8!important;
 }
-.row_padding p.lead {
-    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #000;
-    line-height: 24px;
-    font-weight: 500;
+.row_padding p.lead, p.em_lead , span.text-muted{
+    font-family: Proto Grotesk;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    text-align: left;
 
 }
 .row_padding p.youtube {
@@ -1157,83 +1185,82 @@ section.footware_contet ins {
     max-width: 60%;
     padding: 0px 112px;
 }
-.row_padding table {
+/*.row_padding table {
     margin-top: 100px;
-}
-.row_padding .table {
-    margin-top: 0px;
-}
-.row_padding table tr, .row_padding table td {
-    color: #000;
-    font-size: 13px;
-    font-family: '游ゴシック体', 'Yu Gothic', 'YuGothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
-    font-weight: 500;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    padding: .4rem;
-    border-bottom: 1px solid #e5e5e5;
-}
-.row_padding a.custom-link {
-    color: inherit;
-    text-decoration: none;
-    background-image: -webkit-gradient(linear, left top, right top, from(#cbf1f7), to(#cbf1f7));
-    background-image: -webkit-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
-    background-image: -o-linear-gradient(left,  #d7d3ce 0%, #d7d3ce 100%);
-    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
-    background-color: transparent;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% .55em;
-    font-weight: bolder;
-    text-decoration: none;
-    -webkit-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s;
-}
-.video_gallary{
-    padding: 40px 0px;
-}
-section.gallary_footware {
-    padding: 60px 0px;
-}
-mark, .custom-link:active {
-    background-image: -webkit-gradient(linear, left top, right top, from(#e5e5e5), to(#e5e5e5));
-    background-image: -webkit-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
-    background-image: -o-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
-    background-image: linear-gradient(to right, #e5e5e5 0%, #e5e5e5 100%);
-}
+    }*/
+    .row_padding .table {
+        margin-top: 10px;
+    }
+    .row_padding table tr, .row_padding table td {
+        font-family: Proto Grotesk;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        font-style: normal;
+        text-align: left;
+        padding: .4rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .row_padding a.custom-link {
+        color: inherit;
+        text-decoration: none;
+        background-image: -webkit-gradient(linear, left top, right top, from(#cbf1f7), to(#cbf1f7));
+        background-image: -webkit-linear-gradient(left, #cbf1f7 0%, #cbf1f7 100%);
+        background-image: -o-linear-gradient(left,  #d7d3ce 0%, #d7d3ce 100%);
+        background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+        background-color: transparent;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 100% .55em;
+        font-weight: bolder;
+        text-decoration: none;
+        -webkit-transition: background .3s;
+        -o-transition: background .3s;
+        transition: background .3s;
+    }
+    .video_gallary{
+        padding: 40px 0px;
+    }
+    section.gallary_footware {
+        padding: 60px 0px;
+    }
+    mark, .custom-link:active {
+        background-image: -webkit-gradient(linear, left top, right top, from(#e5e5e5), to(#e5e5e5));
+        background-image: -webkit-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
+        background-image: -o-linear-gradient(left, #e5e5e5 0%, #e5e5e5 100%);
+        background-image: linear-gradient(to right, #e5e5e5 0%, #e5e5e5 100%);
+    }
 
-.row_padding img {
-    height: auto;
-    max-width: 100%;
-}
-.project-gallery-wrapper .project-gallery-image {
-    float: left;
-    width: 28.33%;
-    margin: 1.2%;
-    margin-bottom: 3%;
-}
-.video {
-    padding-bottom: 50px;
-}
+    .row_padding img {
+        height: auto;
+        max-width: 100%;
+    }
+    .project-gallery-wrapper .project-gallery-image {
+        float: left;
+        width: 28.33%;
+        margin: 1.2%;
+        margin-bottom: 3%;
+    }
+    .video {
+        padding-bottom: 50px;
+    }
 
-.large_img img.myImg {
-    max-width: 600px;
-}
-div#myrol {
-    padding-top: 150px;
-}
+    .large_img img.myImg {
+        max-width: 600px;
+    }
+    div#myrol {
+        padding-top: 150px;
+    }
 
-button.close {
-    right: 0;
-}
-.modal-backdrop {
-    background-color: #fff;
-}
-div.show {
-    padding-right: 0px !important;
-}
+    button.close {
+        right: 0;
+    }
+    .modal-backdrop {
+        background-color: #fff;
+    }
+    div.show {
+        padding-right: 0px !important;
+    }
 /*lightbox
 button.close {
     right: 24px;
@@ -1299,14 +1326,14 @@ button.close {
 img.img-bg {
     background-color: #d7d3ce;
 }
-section.provo_section {
+.prova_banner_section{
     background: url(../image/banners-provo.png);
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
     position: relative;
     background-size: cover;
-    height: 370px;
+    height: 460px;
     overflow: hidden;
     padding-top: 50px;
 }
@@ -1320,22 +1347,11 @@ h1.site_title {
     text-shadow: 2px 2px white;
     font-weight: 400;
 }
-.provo_section .saho_text{
+.prova_banner_section .saho_text{
     text-decoration: underline;
     color: #989898;
 }
-/*img.provo_right_img {
- width: 100%;
- max-width: 200px;
- float: right;
- z-index: 1;
- bottom: 0px;
- position: absolute;
- right: -20px;
- top: -15px;
- opacity: 0.6;
- }*/
- img.provo_right_img.w-100 {
+img.provo_right_img.w-100 {
     position: relative;
     bottom: -130px;
 }
@@ -1344,16 +1360,13 @@ img.backpack_img {
     position: relative;
     z-index: 0;
     bottom: -80px;
-    right: 26px;
+    right: -100px;
 }
-.cu_div {
-    max-width: 260px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.prova_banner_section .p-below-img {
+    top: -110px;
 }
 section#provo_goal.row_padding {
-    padding: 120px 0px;
+    padding: 0px 10px 50px 10px;
 }
 #provo_goal p.lead {
     width: 100%;
@@ -1385,8 +1398,10 @@ div#provo_second_row {
 div#provo_second_row p.lead {
     max-width: 75%;
 }
-.provo_section .right_col {
-    padding: 160px 0px 0px 0px;
+#provo_second_row .prova_bag{
+  height: auto;
+  max-width: 50%;
+  width: 100%;
 }
 
 /* XANAX Page*/
@@ -1400,19 +1415,10 @@ section.XANAX_section {
     height: 100%;
     max-height: 400px;
 }
-/*h1.title_xanax ins {
-    background-color: transparent;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% .55em;
-    font-weight: bolder;
-    text-decoration: none;
-    -webkit-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s;
-    background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
-    font-size: 42px ;
-}*/
+p.para {
+    font-size: 18px;
+}
+
 ins {
     background-color: transparent;
     background-position: 0 100%;
@@ -1424,6 +1430,7 @@ ins {
     -o-transition: background .3s;
     transition: background .3s;
     background-image: linear-gradient(to right, #d7d3ce 0%, #d7d3ce 100%);
+    font-size: 20px;
 }
 .unity{
     font-size: 14px; 
@@ -1461,7 +1468,7 @@ section#XANAX_goal .tech_text {
     width: 80%;
 }
 .XANAX_gap_col{
-   padding-top: 100PX;
+ padding-top: 100PX;
 }
 #XANAX_second_row p.lead {
     width: 85%;
@@ -1480,7 +1487,7 @@ section#XANAX_goal .tech_text {
     font-size: 15px;
     font-weight: 400;
 }
- .row_padding blockquote {
+.row_padding blockquote {
     font-size: 20px;
     font-weight: 500;
     position: relative;
@@ -1494,6 +1501,7 @@ section#XANAX_goal .tech_text {
     font-size: 6rem;
     line-height: 1;
     color: #e5e5e5;
+    top: -40px;
 }
 .last_para b {
     font-size: 14px;
@@ -1508,12 +1516,16 @@ section.wbx_banner {
     background: url(../image/wbx/banner-1.png);
     background-repeat: no-repeat;
     background-position: center;
-  /*  opacity: 0.7;*/
+    /*  opacity: 0.7;*/
     position: relative;
     background-size: cover;
     height: 100%;
     max-height: 300px;
     
+}
+section.wbx_banner .p-right-img {
+    right: 200px;
+    top: -60px;
 }
 .wbx_banner a.saho_text {
     display: flex;
@@ -1552,30 +1564,33 @@ h1.title_row.lh-1 {
     margin-top: 170px;
 }
 section#wbx_goal {
-    padding: 150px 0px;
+    padding: 50px 0px;
 }
 table.wbx_table {
     margin-top: 180px;
 }
 /*RCB.html*/
-.bg-purple {
+/*.bg-purple {
     background-color: #c5b3ff;
-}
-section.rcb_section {
-    background: url('../image/RCB/banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    position: relative;
-    background-size: cover;
-    height: 100%;
-    max-height: 460px;
-    z-index: 1;
-}
-.p-right-img {
-   opacity: 0.6;
+    }*/
+    blockquote.lead.mt-5.w-75 {
+        font-size: 18px;
+    }
+    section.rcb_section {
+        background: url('../image/RCB/banner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        position: relative;
+        background-size: cover;
+        height: 100%;
+        max-height: 460px;
+        z-index: 1;
+    }
+    .p-right-img {
+     opacity: 0.6;
  }
-.lower_content p3 {
+ .lower_content p3 {
     font-family: 'Barlow';
     z-index: 21;
     line-height: 1.4;
@@ -1591,6 +1606,7 @@ section.rcb_section {
     transition: background .3s;
     background-image: linear-gradient(to right, #cbf1f7 0%, #cbf1f7 100%);
     text-shadow: 1px 1px white;
+    font-size: 2.36vw;
 }
 .below-banner {
     padding-top: 250px;
@@ -1603,10 +1619,72 @@ section.rcb_section {
     top: -125px;
 }
 .pt-custom {
-      padding-top: 185px;
+  padding-top: 185px;
 }
-section#rcb_goal {
-    padding: 250px 0px;
+section#rcb_goal, section#levi_goal {
+    padding: 0px 0px 50px 0px;
+}
+/* Levi Page*/
+section.levi_section {
+    background: url('../image/LEVI/bannersaveas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 460px;
+    z-index: 1;
+}
+section.levi_section .p-below-img {
+    left: 40px;
+    max-width: 150px;
+    top: 0px;
+}
+h2.para.mb-5.pb-5 {
+    font-size: 20px;
+}
+.row_padding  .levi_table{
+    margin-top: 0px;
+}
+div#levi_content p {
+    width: 90%;
+}
+#levi_content mark {
+    background-color: transparent;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 103% 0.65em;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+}
+.r-img img.featurette-image {
+    width: 100%;
+    max-width: 85%;
+    padding-top: 34px;
+}
+/* XYZAR page*/
+.saho_text p {
+    text-decoration: underline;
+    color: #989898;
+    font-family: 'Barlow';
+    font-size: 3vw;
+    z-index: 8;
+    text-shadow: 2px 2px white;
+}
+.xyzar_section{
+    background: url('../image/XYZAR/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    max-height: 460px;
+    z-index: 1;
 }
 @media (min-width: 600px) {
     .Gallery-item img {
@@ -1629,9 +1707,9 @@ section#rcb_goal {
     }
 }
 @media (max-width: 1140px) {
-.pt-custom.mob-padding {
+    .pt-custom.mob-padding {
       padding-top: 210px;
-}
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1643,7 +1721,7 @@ section#rcb_goal {
     }
 }
 @media (max-width: 767px) {
-   .resume-image:before {
+ .resume-image:before {
     transform: scale(0.7);
 }
 .circle-shape-title:before {
@@ -1658,7 +1736,7 @@ section#rcb_goal {
     min-height: 100%;
     height: 100%;
 }
-.g-desc h3 {
+.g-desc h3{
     font-size: 18px;
 }
 .overlap-image .work-pic img {
@@ -1715,25 +1793,47 @@ section#rcb_goal {
 
     }
     .contetnt_section .col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 50.333333%;
-    max-width: 49.333333%;
-}
-.empty_div {
-    display: none;
-}
-.contetnt_section .firstsec_content p {
-    font-size: 32px;
-}
-section#wbx_goal {
-    padding: 60px 0px;
-}
-table.wbx_table {
-    margin-top: 0px;
-}
-h1.title_row.lh-1 {
-    line-height: 26px;
-}
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 50.333333%;
+        max-width: 49.333333%;
+    }
+    .empty_div {
+        display: none;
+    }
+    .contetnt_section .firstsec_content p {
+        font-size: 32px;
+    }
+    section#wbx_goal {
+        padding: 60px 0px;
+    }
+    table.wbx_table {
+        margin-top: 0px;
+    }
+    h1.title_row.lh-1 {
+        line-height: 26px;
+    }
+    .p-below-img {
+        top: 0px;
+    }
+    section#rcb_goal, section#levi_goal{
+        padding: 100px 0px;
+    }
+    .saho_text p {
+        font-size: 10vw;
+    }
+    section.prova_banner_section img.w-100.p-right-img.position-absolute.mob-img {
+        bottom: 40px;
+        max-width: 145px !important;
+        right: 0px !important;
+        top: 30px !important;
+    }
+    .prova_banner_section .p-below-img {
+        top: -80px;
+    }
+    section.wbx_banner .p-right-img {
+       right: 10px;
+       top: -60px;
+   }
 }
 @media (max-width: 1024px) and (min-width: 992px){
     .left-triangle-shape:after {
@@ -1749,7 +1849,16 @@ h1.title_row.lh-1 {
     .title_row ins {
         font-size: 34px;
     }
-
+    section#rcb_goal, section#levi_goal {
+        padding: 100px 0px;
+    }
+    .saho_text p {
+        font-size: 10vw;
+    }
+    section.wbx_banner .p-right-img {
+     right: 10px;
+     top: -60px;
+ }
 }
 
 @media (max-width: 587px) {
@@ -1762,6 +1871,7 @@ h1.title_row.lh-1 {
     .oveflow-hidden > img:last-of-type {
         display: none;
     }
+
 }
 /*End tangibleStorytelling.html*/
 @media screen and (max-width: 1440px) {
@@ -1786,7 +1896,13 @@ h1.title_row.lh-1 {
     .section1 {
         font-size: 37px;
     }
-
+    .w-75 {
+        width: 100% !important;
+        padding: 0px 10px;
+    }
+    .row_padding blockquote {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1992,59 +2108,71 @@ h1.title_row.lh-1 {
 }
 
 
-.sticky-container {
+/*.sticky-container {
     background-color: #c5b3ff;
-}
-section{
+    }*/
+/*section{
     background-color: #c5b3ff;
-}
-@media(max-width:1200px){
-    section.custom_section{
-        min-width:auto;
+    }*/
+    @media(max-width:1200px){
+        section.custom_section{
+            min-width:auto;
+        }
+        .custom_section img {
+            width: 100vw;
+        }
+        section#XANAX_goal iframe {
+            width: 100%;
+        }
     }
-    .custom_section img {
-        width: 100vw;
+    @media(max-width:576px){
+        .sticky-container{
+            max-height:500px;
+        }
+        main.custom_main{
+            overflow-x:scroll;
+        }
     }
-    section#XANAX_goal iframe {
-        width: 100%;
+    @media (min-width: 1200px){
+        .modal-xl {
+            width: 100%;
+        }
+        .saho_text {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            min-height: 200px;
+        }
     }
-}
-@media(max-width:576px){
-    .sticky-container{
-        max-height:660px;
+    @media (max-width: 320px){
+        section.levi_section .p-below-img {
+            left: 10px !important;
+            max-width: 75px !important;
+            top: 50px !important;
+        }
     }
-    main.custom_main{
-        overflow-x:scroll;
-    }
-}
-@media (min-width: 1200px){
-    .modal-xl {
-        width: 100%;
-        max-width: 80%;
-    }
-    .provo_section .container{
-        max-width: 1400px;
-    }
+    @media (max-width: 767px){
+      .cu_div {
+        max-width: 100%;
+        position: relative;
 
-}
-@media (max-width: 767px){
-  .cu_div {
-    max-width: 100%;
-    position: relative;
+    }
+    img.provo_right_img.w-100 {
+        position: relative;
+        bottom: 40px;
+        max-width: 145px;
 
-}
-img.provo_right_img.w-100 {
-    position: relative;
-    bottom: 40px;
-    max-width: 145px;
-
-}
-img.backpack_img {
-   position: relative;
-   bottom: 70px;
-   max-width: 126px;
-}
-section#XANAX_goal .row.featurette {
+    }
+    img.backpack_img {
+     position: relative;
+     bottom: 70px;
+     max-width: 126px;
+ }
+ section#XANAX_goal .row.featurette {
     width: 100%;
 }
 section#XANAX_goal .tech_text, #XANAX_second_row p.lead, section#XANAX_goal iframe {
@@ -2076,7 +2204,7 @@ table.wbx_table {
 h1.title_row.lh-1 {
     line-height: 34px;
 }
- .p-right-img {
+.p-right-img {
     right: -45px;
     top: -60px;
 }
@@ -2084,9 +2212,66 @@ h1.title_row.lh-1 {
     top: 39px;
 }
 .pt-custom {
-      padding-top: 50px;
+  padding-top: 50px;
 }
 .pt-custom.mob-padding {
-      padding-top: 100px;
+  padding-top: 100px;
+}
+.p-below-img {
+    top: -200px;
+    left: 0;
+    right: 0;
+    padding-top: -1px;
+    margin-left: 136px;
+    max-width: 115px;
+}
+.rcb_section .mob-img{
+    position: unset !important;
+}
+section#rcb_goal, section#levi_goal {
+    padding: 0px 0px;
+}
+section#rcb_goal p.mb-0.pt-5.mt-5 , section#levi_goal p.mb-0.pt-5.mt-5{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+section.levi_section .p-below-img {
+    left: 45px;
+    max-width: 106px;
+    top:50px;
+}
+section.levi_section  ins.font-weight-bold.bg-transparent {
+    font-size: 18px;
+}
+.r-img img.featurette-image {
+    width: 100%;
+    max-width: 100%;
+
+}
+.saho_text p {
+    font-size: 9vw;
+}
+ins, .row_padding p.lead, .row_padding table tr, .row_padding table td, p.para{
+   font-size: 16px;
+}
+.empty {
+    display: none;
+}
+.prova_banner_section{
+    height: 360px;
+}
+section.prova_banner_section img.w-100.p-right-img.position-absolute.mob-img {
+    position: relative !important;
+    bottom: 40px;
+    max-width: 145px !important;
+    right: 0px !important;
+    top: 0px !important;
+}
+.prova_banner_section .p-below-img {
+    top: -160px;
 }
 }
