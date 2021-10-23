@@ -19,7 +19,7 @@
 <style type="text/css">
 
 </style>
-<body style="background-color: #c5b3ff;">
+<body class="prova_page">
     <div class="main-page-div d-flex flex-wrap">
         <div class="w-100 p-sidebar"> 
             <div class="sidebar w-100">
@@ -105,73 +105,73 @@
         <div class="container" style="max-width: 1400px;">
           <div class="row">
               <div class="col-md-2 saho_text"><p>SA\HO</p></div>
-            <div class="col-md-10 pt-custom">
+              <div class="col-md-10 pt-custom">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-end"><img src="image/img.png" class="w-100 p-right-img position-absolute mob-img" style="max-width: 228px;"></div>
                     <div class="col-md-12 pr-xl-5 mr-xl-5 pr-md-5 mr-md-5 pr-4 mr-0">
                         <div class="row pr-xl-5 mr-xl-5 pr-md-5 mr-md-5 pr-0 mr-0 pt-custom mob-padding mt-4">
                             <div class="col-md-9 d-flex justify-content-end">
-                                </div>
-                                <div class="col-md-3"><img src="image/backpack.png" class="w-100 position-relative p-below-img backpack_img"></div>
                             </div>
+                            <div class="col-md-3"><img src="image/backpack.png" class="w-100 position-relative p-below-img backpack_img"></div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
-    </section>
-   <div class="sticky-container" id="prova-sticky-container">
+    </div>
+</section>
+<div class="sticky-container" id="prova-sticky-container">
 
-           <main class="custom_main">
-        
-        
-             <section class="custom_section">
-               <img src="image/provo/img-1.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+ <main class="custom_main">
 
-            <section class="custom_section">
-                <img src="image/provo/img-2.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
 
-            <section class="custom_section">
-               <img src="image/provo/img-3.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+   <section class="custom_section">
+     <img src="image/provo/img-1.png" data-toggle="modal" data-target="#exampleModal">
+ </section>
 
-            <section class="custom_section">
-                <img src="image/provo/img-4.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+ <section class="custom_section">
+    <img src="image/provo/img-2.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-             <section class="custom_section">
-               <img src="image/provo/img-5.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-3.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-               <section class="custom_section">
-               <img src="image/provo/img-6.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+    <img src="image/provo/img-4.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-              <section class="custom_section">
-               <img src="image/provo/img-8.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-5.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-              <section class="custom_section">
-               <img src="image/provo/img-7.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-6.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-              <section class="custom_section">
-               <img src="image/provo/img-9.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-8.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-              <section class="custom_section">
-               <img src="image/provo/img-10.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-7.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-              <section class="custom_section">
-               <img src="image/provo/img-11.png" data-toggle="modal" data-target="#exampleModal">
-            </section>
+<section class="custom_section">
+ <img src="image/provo/img-9.png" data-toggle="modal" data-target="#exampleModal">
+</section>
 
-         </main>
-      </div>
+<section class="custom_section">
+ <img src="image/provo/img-10.png" data-toggle="modal" data-target="#exampleModal">
+</section>
+
+<section class="custom_section">
+ <img src="image/provo/img-11.png" data-toggle="modal" data-target="#exampleModal">
+</section>
+
+</main>
+</div>
 
 <section class="our_goal row_padding" id="provo_goal" >
     <div class="container">
@@ -302,6 +302,30 @@
         </div>
     </div>
 </footer> 
- <script src="js/onscollimg.js"></script>
+<script src="js/onscollimg.js"></script>
+<script type="text/javascript">
+ $( document ).ready(function(){
+    $('html').append('<div style="" id="loadingDiv"><h1 id="s100">SAMANTHa HO</h1><h1 id="s200">SAMANTHA HO</h1><h1 id="s300">SAMANTHA HO</h1><h1 id="s400">SAMANTHa HO</h1><h1 id="s500">SAMANTHa HO</h1><h1 id="s600">SAMANTHa HO</h1></div>');
+    $(window).on('load', function(){
+       setTimeout(removeLoader); //wait for page load PLUS two seconds.
+   });
+    setTimeout(function(){ 
+        $("#loadingDiv").show('slow'); 
+    },2000); 
+    $("html").css({"background": "#F5F0FF"});
+    $("body").hide();
+    $("#loadingDiv").css({"z-index": "99", "opacity": "1"});
+    function removeLoader(){
+     $( "#loadingDiv" ).delay(2000).hide('slow', function() {
+      // fadeOut complete. Remove the loading div
+      $("html").css({"background": "unset"});  
+     $( "#loadingDiv" ).remove(); //makes page more lightweight 
+ });
+     $('body').delay(1000).show('slow');
+     
+ }
+});
+</script> 
+</script>
 </body>
 </html>

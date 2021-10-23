@@ -19,7 +19,7 @@
 <style type="text/css">
 
 </style>
-<body style="background-color: #c5b3ff;">
+<body class="wbx_page">
     <div class="main-page-div d-flex flex-wrap">
         <div class="w-100 p-sidebar"> 
             <div class="sidebar w-100">
@@ -263,5 +263,28 @@
     </div>
 </footer> 
  <script src="js/onscollimg.js"></script>
+ <script type="text/javascript">
+   $( document ).ready(function(){
+    $('html').append('<div style="" id="loadingDiv"><h1 id="s100">SAMANTHa HO</h1><h1 id="s200">SAMANTHA HO</h1><h1 id="s300">SAMANTHA HO</h1><h1 id="s400">SAMANTHa HO</h1><h1 id="s500">SAMANTHa HO</h1><h1 id="s600">SAMANTHa HO</h1></div>');
+    $(window).on('load', function(){
+       setTimeout(removeLoader); //wait for page load PLUS two seconds.
+   });
+    setTimeout(function(){ 
+        $("#loadingDiv").show('slow'); 
+    },2000); 
+    $("html").css({"background": "#F5F0FF"});
+    $("body").hide();
+    $("#loadingDiv").css({"z-index": "99", "opacity": "1"});
+    function removeLoader(){
+     $( "#loadingDiv" ).delay(2000).hide('slow', function() {
+      // fadeOut complete. Remove the loading div
+      $("html").css({"background": "unset"});  
+     $( "#loadingDiv" ).remove(); //makes page more lightweight 
+ });
+     $('body').delay(1000).show('slow');
+     
+ }
+});
+</script> 
 </body>
 </html>
